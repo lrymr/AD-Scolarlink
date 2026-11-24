@@ -1,0 +1,21 @@
+.checklist-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 400px;
+}
+
+.checklist-list li {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checklist-list li.completed label {
+  text-decoration: line-through;
+  color: gray;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.6rem;
+  cursor: pointer;
+}

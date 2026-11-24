@@ -1,0 +1,21 @@
+.scholarship-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.needs-verification {
+  color: #b44b4b;
+  font-weight: 700;
+  margin: 0.2rem 0;
+}
+
+.official-link {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 0.7rem;
+}

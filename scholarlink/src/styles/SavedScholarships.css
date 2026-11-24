@@ -1,0 +1,34 @@
+.saved-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.saved-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.saved-item select {
+  max-width: 220px;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--lavender);
+}
+
+.remove-button {
+  max-width: 100px;
+  background: #b44b4b;
+  margin-top: 0.4rem;
+}
+
+.remove-button:hover {
+  background: #8a3939;
+}
+
+.official-link {
+  color: var(--purple);
+  text-decoration: underline;
+}

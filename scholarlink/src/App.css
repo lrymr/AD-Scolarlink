@@ -1,0 +1,135 @@
+/* Root variables for colors */
+:root {
+  --purple: #6a4c93;
+  --lavender: #b497bd;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-family);
+  background: #f8f4fc;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 5px var(--shadow);
+  margin-bottom: 1rem;
+}
+
+button, input, select, textarea {
+  font-family: var(--font-family);
+}
+
+button {
+  cursor: pointer;
+  background: var(--purple);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--lavender);
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0 1rem;
+  color: var(--purple);
+}
+
+input[type="text"], input[type="number"], select, textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--lavender);
+  width: 100%;
+  margin-bottom: 1rem;
+  outline-offset: 2px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* Navigation styling */
+nav {
+  background: var(--purple);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.7rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav button {
+  background: transparent;
+  color: var(--white);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background 0.25s ease;
+}
+
+nav button:hover,
+nav button.active {
+  background: var(--lavender);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+    width: 98%;
+  }
+
+  nav {
+    gap: 0.3rem;
+  }
+
+  nav button {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.85rem;
+  }
+}

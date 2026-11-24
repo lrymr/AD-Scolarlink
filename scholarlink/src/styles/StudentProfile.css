@@ -1,0 +1,34 @@
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 1rem;
+}
+
+.profile-form input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--lavender);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-buttons button:nth-child(2) {
+  background: #b44b4b;
+}
+
+.form-buttons button:nth-child(2):hover {
+  background: #8a3939;
+}
+
+.profile-display p {
+  margin: 0.3rem 0;
+}
+
+button {
+  max-width: 120px;
+  margin-top: 1rem;
+}

@@ -1,0 +1,10 @@
+.notifier-list {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+}
+
+.note {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}

@@ -1,0 +1,29 @@
+.filters-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filters label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.scholarship-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+.grade-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+.grades-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.grades-list th, .grades-list td {
+  border: 1px solid var(--lavender);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+.grades-list th {
+  background-color: var(--lavender);
+  color: var(--white);
+}
+
+.grades-list button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}

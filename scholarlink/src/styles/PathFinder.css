@@ -1,0 +1,401 @@
+
+.pathfinder-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  color: #393044;
+}
+
+.pathfinder-header {
+  text-align: center;
+  padding: 35px 20px;
+  margin-bottom: 22px;
+  background: linear-gradient(135deg, #f4edff, #fff4fa);
+  border-radius: 22px;
+}
+
+.pathfinder-tag {
+  display: inline-block;
+  color: #8762b2;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pathfinder-header h1 {
+  margin: 12px 0;
+  color: #76539d;
+  font-size: 34px;
+}
+
+.pathfinder-header p,
+.pathfinder-subtitle {
+  color: #83788c;
+  line-height: 1.6;
+}
+
+.pathfinder-card {
+  background: white;
+  border: 1px solid #eee6f5;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(93, 65, 120, 0.05);
+}
+
+.pathfinder-card h2 {
+  color: #62477f;
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.pathfinder-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.pathfinder-type-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pathfinder-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 9px;
+  padding: 20px;
+  background: #fcfaff;
+  border: 2px solid #eee6f5;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #51445e;
+}
+
+.pathfinder-type:hover,
+.pathfinder-type.active {
+  border-color: #a987ce;
+  background: #f6f0ff;
+}
+
+.pathfinder-type > span {
+  font-size: 28px;
+}
+
+.pathfinder-type strong {
+  font-size: 16px;
+}
+
+.pathfinder-type small {
+  color: #8b8094;
+  line-height: 1.5;
+}
+
+.pathfinder-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pathfinder-section-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pathfinder-section-heading h2 {
+  margin: 0;
+}
+
+.pathfinder-number {
+  color: #a17bc6;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.pathfinder-count {
+  font-size: 12px;
+  color: #8a6ca8;
+  background: #f4edff;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+
+.pathfinder-interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.pathfinder-interest {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 13px;
+  background: #fcfaff;
+  border: 1px solid #eee6f5;
+  border-radius: 11px;
+  color: #65596e;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.pathfinder-interest span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #f0e8f8;
+  color: #8460a8;
+  font-weight: bold;
+}
+
+.pathfinder-interest.selected {
+  background: #f3ebff;
+  border-color: #a987ce;
+  color: #704e96;
+}
+
+.pathfinder-interest.selected span {
+  background: #9270b7;
+  color: white;
+}
+
+.pathfinder-grade-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.pathfinder-grade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background: #faf7fc;
+  border-radius: 10px;
+  color: #71647c;
+  font-size: 14px;
+}
+
+.pathfinder-grade-item strong {
+  color: #8460a8;
+}
+
+.pathfinder-empty {
+  text-align: center;
+  padding: 25px;
+  background: #faf7fc;
+  border-radius: 12px;
+}
+
+.pathfinder-empty span {
+  font-size: 32px;
+}
+
+.pathfinder-empty strong {
+  display: block;
+  color: #76539d;
+  margin: 10px 0;
+}
+
+.pathfinder-empty p {
+  color: #897f90;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.pathfinder-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #8968ad;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.pathfinder-submit:hover {
+  background: #735294;
+  transform: translateY(-2px);
+}
+
+.pathfinder-submit:disabled {
+  background: #c8bdd3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pathfinder-results {
+  margin-top: 35px;
+}
+
+.pathfinder-results-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pathfinder-results-heading h2 {
+  color: #76539d;
+  margin: 10px 0;
+}
+
+.pathfinder-results-heading p {
+  color: #897f90;
+  font-size: 14px;
+}
+
+.pathfinder-result-card {
+  background: white;
+  border: 1px solid #e9dff2;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 20px rgba(93, 65, 120, 0.05);
+}
+
+.pathfinder-result-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.pathfinder-rank {
+  color: #8864ac;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pathfinder-result-top strong {
+  background: #f1eaff;
+  color: #79559d;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.pathfinder-result-card h3 {
+  color: #654783;
+  font-size: 21px;
+  margin: 0 0 5px;
+}
+
+.pathfinder-result-card h4 {
+  color: #92869c;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.pathfinder-result-card > p {
+  color: #766b80;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.pathfinder-score-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 17px 0;
+}
+
+.pathfinder-score-details span {
+  background: #faf6ff;
+  color: #795d94;
+  padding: 8px 11px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.pathfinder-match-info {
+  padding: 12px;
+  background: #fcfaff;
+  border-radius: 9px;
+  margin-top: 10px;
+}
+
+.pathfinder-match-info strong {
+  color: #76539d;
+  font-size: 12px;
+}
+
+.pathfinder-match-info p {
+  color: #81758c;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.pathfinder-disclaimer {
+  color: #8c8293;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pathfinder-reset {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 20px;
+  border: 1px solid #a987ce;
+  border-radius: 10px;
+  color: #79559d;
+  background: white;
+  cursor: pointer;
+}
+
+.pathfinder-reset:hover {
+  background: #f6f0ff;
+}
+
+@media (max-width: 600px) {
+  .pathfinder-page {
+    padding: 18px 12px;
+  }
+
+  .pathfinder-header {
+    padding: 28px 15px;
+  }
+
+  .pathfinder-header h1 {
+    font-size: 27px;
+  }
+
+  .pathfinder-card {
+    padding: 18px;
+  }
+
+  .pathfinder-type-options,
+  .pathfinder-interest-grid,
+  .pathfinder-grade-list {
+    grid-template-columns: 1fr;
+  }
+
+  .pathfinder-section-heading {
+    align-items: flex-start;
+  }
+
+  .pathfinder-section-heading h2 {
+    font-size: 18px;
+  }
+}
